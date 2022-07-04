@@ -16,7 +16,7 @@ pipeline{
         stage("ls image")
         {
             steps{
-                    sh "docker run -it --entrypoint /bin/bash example"
+                    sh "docker images"
                  }
           } 
     }
