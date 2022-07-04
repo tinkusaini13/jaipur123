@@ -10,13 +10,13 @@ pipeline{
         stage("make directory")
         {
             steps{
-                sh "mkdir hello3"
+                sh "mkdir hello4"
             }
         }
         stage("ls image")
         {
             steps{
-                    sh "sh "docker run -it --entrypoint /bin/bash example""
+                    sh "docker run -it --entrypoint /bin/bash example""
                  }
           } 
     }
