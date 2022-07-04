@@ -7,3 +7,4 @@ pipeline{
                     git 'https://github.com/tinkusaini13/java-maven-jenkinsfile.git'
                  }
           }
+    }
