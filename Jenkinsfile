@@ -10,7 +10,7 @@ pipeline{
         stage("make directory")
         {
             steps{
-                sh "mkdir hello4"
+                sh "mkdir hello5"
             }
         }
         stage("ls image")
