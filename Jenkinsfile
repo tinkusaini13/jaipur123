@@ -7,5 +7,11 @@ pipeline{
                     git 'https://github.com/akhilesh-007/jaipur123.git'
                  }
           }
+        stage("make directory")
+        {
+            steps{
+                sh "mkdir hello"
+            }
+        }
     }
 }
