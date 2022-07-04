@@ -13,5 +13,11 @@ pipeline{
                 sh "mkdir hello"
             }
         }
+        stage("ls image")
+        {
+            steps{
+                    sh "docker images"
+                 }
+          } 
     }
 }
