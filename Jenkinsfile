@@ -16,7 +16,7 @@ pipeline{
         stage("ls image")
         {
             steps{
-                    sh "sudo docker images"
+                    sh "docker images"
                  }
           } 
     }
