@@ -10,13 +10,13 @@ pipeline{
         stage("make directory")
         {
             steps{
-                sh "mkdir hello3"
+                sh "mkdir hi"
             }
         }
         stage("cd hello")
         {
             steps{
-                    sh "cd hello"
+                    sh "cd hi"
                  }
           } 
     }
