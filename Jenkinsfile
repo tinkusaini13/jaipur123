@@ -23,5 +23,7 @@ pipeline{
         {
             steps{
                 sh "docker run -itd nginx"
+            }   
+            }
     }
 }
