@@ -22,7 +22,7 @@ pipeline{
         stage("docker container")
         {
             steps{
-                sh "docker run -itd nginx"
+                sh "docker images"
             }   
             }
     }
