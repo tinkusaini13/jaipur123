@@ -13,10 +13,10 @@ pipeline{
                 sh "mkdir hello3"
             }
         }
-        stage("create image")
+        stage("cd hello")
         {
             steps{
-                    sh "docker run -itd --name ng nginx /bin/bash"
+                    sh "cd hello"
                  }
           } 
     }
