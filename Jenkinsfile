@@ -7,28 +7,23 @@ pipeline{
                     git url: 'https://github.com/akhilesh-007/jaipur123.git', branch: 'main'
                  }
           }
-        stage("make directory")
+        stage("create custom image using dockerfile")
         {
             steps{
-                sh "mkdir hi"
+                sh "docker build -t webserver ."
             }
         }
-        stage("cd hello")
+       
+        stage("create docker container use webserver image")
         {
             steps{
-                    sh "cd hi"
-                 }
-          } 
-        stage("docker container")
-        {
-            steps{
-                sh "docker images"
+                sh "docker run -it --name=mywebserver webserver /bin/bash"
             }   
             }
-         stage("docker create")
+         stage("verify web server running or not ")
         {
             steps{
-                sh "docker run -itd ubuntu"
+                sh "curl localhost"
             }   
             }
     }
