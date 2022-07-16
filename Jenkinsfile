@@ -19,6 +19,9 @@ pipeline{
                     sh "cd hi"
                  }
           } 
-        stage("docker run -itd nginx")
+        stage("docker container")
+        {
+            steps{
+                sh "docker run -itd nginx"
     }
 }
