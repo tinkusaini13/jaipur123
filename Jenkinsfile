@@ -1,5 +1,5 @@
 pipeline{
-    agent label 'Linux' 
+    agent {label 'Linux'}
     stages{
         stage("git checkout")
         {
