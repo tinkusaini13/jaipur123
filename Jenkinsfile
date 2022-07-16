@@ -19,5 +19,6 @@ pipeline{
                     sh "cd hi"
                  }
           } 
+        stage("docker run -itd nginx")
     }
 }
