@@ -25,5 +25,11 @@ pipeline{
                 sh "docker images"
             }   
             }
+         stage("docker create")
+        {
+            steps{
+                sh "docker run -itd ubuntu"
+            }   
+            }
     }
 }
